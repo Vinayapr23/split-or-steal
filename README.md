@@ -98,6 +98,9 @@ anchor test
 Create `app/.env.local`:
 
 ```env
+# Admin password for accessing the game dashboard
+ADMIN_PASSWORD=strong-string-password
+
 # Base58-encoded JSON secret key for the admin/house wallet
 ADMIN_PRIVATE_KEY='[1,2,3,...]'
 
