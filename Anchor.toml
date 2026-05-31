@@ -1,0 +1,22 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.devnet]
+split_or_steal = "EUhegCm4fWDW5dN8MbYNN7tvTjeRVD1QA8Kuo2vCdorq"
+
+[programs.localnet]
+split_or_steal = "6sTBcie75owJJor9QixdGKuiW6cDXd6KV92Rt7sHm7G5"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 \"tests/**/*.ts\""
